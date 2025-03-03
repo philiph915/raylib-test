@@ -20,6 +20,11 @@ int main()
         BeginDrawing();
             ClearBackground(darkGreen);
             ball.Draw();
+
+        // Get FPS value and draw it in a custom color
+        int fps = GetFPS();  
+        DrawText(TextFormat("FPS: %d", fps), 10, 10, 20, WHITE); 
+
         EndDrawing();
     }
     
